@@ -3,46 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roberley Antonio | Senior Android Developer</title>
+    <title>Roberley Antonio | Senior Android Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>.lang-en { display: none; }</style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .lang-en { display: none; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .project-card:hover { border-color: #3b82f6; transform: translateY(-4px); transition: all 0.3s ease; }
+    </style>
 </head>
-<body class="bg-slate-900 text-white font-sans">
-    <nav class="p-6 flex justify-between items-center max-w-4xl mx-auto">
-        <h1 class="text-xl font-bold tracking-tighter text-blue-400">ROBERLEY ANTONIO</h1>
-        <button onclick="toggleLanguage()" class="bg-blue-600 hover:bg-blue-500 px-4 py-1 rounded-full text-sm font-medium transition">
-            <span class="lang-pt">English 🇺🇸</span><span class="lang-en">Português 🇧🇷</span>
-        </button>
+<body class="bg-[#0f172a] text-slate-200 selection:bg-blue-500/30">
+
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-extrabold tracking-tighter text-xl underline decoration-blue-500">RA.</span>
+            <button onclick="toggleLanguage()" class="text-xs font-bold tracking-widest uppercase border border-slate-700 px-3 py-1 rounded hover:bg-slate-800 transition">
+                <span class="lang-pt">Change to English 🇺🇸</span>
+                <span class="lang-en">Mudar para Português 🇧🇷</span>
+            </button>
+        </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto mt-16 px-6">
-        <div class="text-center">
-            <img src="https://github.com/roberleyantonio.png" alt="Profile" class="w-32 h-32 rounded-full mx-auto border-4 border-blue-600 mb-6">
-            <h2 class="text-4xl font-extrabold mb-4">Senior Software Engineer</h2>
-            
-            <p class="text-slate-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-                <span class="lang-pt">
-                    Engenheiro de Software Sênior com mais de 7 anos de experiência focado em soluções nativas Android[cite: 6]. 
-                    Especialista em <strong>Kotlin, Clean Architecture e Jetpack Compose</strong>.
-                </span>
-                <span class="lang-en">
-                    Senior Software Engineer with over 7 years of experience focused on native Android solutions[cite: 6]. 
-                    Specialist in <strong>Kotlin, Clean Architecture, and Jetpack Compose</strong>.
-                </span>
+    <section class="pt-32 pb-16 px-6">
+        <div class="max-w-5xl mx-auto">
+            <span class="text-blue-400 font-mono text-sm mb-4 block opacity-80 uppercase tracking-[0.2em]">Senior Software Engineer</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                <span class="lang-pt font-extrabold">Engenharia Mobile de <span class="gradient-text">Alta Performance.</span></span>
+                <span class="lang-en font-extrabold">High Performance <span class="gradient-text">Mobile Engineering.</span></span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
+                <span class="lang-pt">Especialista Android com mais de 7 anos de experiência. Foco em arquiteturas escaláveis e soluções robustas em <strong>Kotlin</strong>.</span>
+                <span class="lang-en">Android Specialist with 7+ years of experience. Focused on scalable architectures and robust <strong>Kotlin</strong> solutions.</span>
             </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="https://www.linkedin.com/in/roberleyantonio" target="_blank" class="bg-[#0077b5] hover:bg-[#006192] text-white px-6 py-3 rounded-lg font-bold transition flex items-center gap-2">
+                    LinkedIn
+                </a>
+                <a href="mailto:roberley@gmail.com" class="glass px-6 py-3 rounded-lg font-bold hover:bg-white/5 transition">Email</a>
+            </div>
         </div>
+    </section>
 
-        <div class="grid md:grid-cols-2 gap-6 mt-10">
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <h3 class="text-blue-400 font-bold mb-2">Core Skills</h3>
-                <p class="text-sm text-slate-300">Kotlin, Clean Architecture, MVVM, Jetpack Compose, Flutter, Coroutines, Flow, $CI/CD$.</p>
-            </div>
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <h3 class="text-blue-400 font-bold mb-2">Experience</h3>
-                <p class="text-sm text-slate-300">PagSeguro PagBank, Lojas Americanas, Autotrac.</p>
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl font-bold mb-10 flex items-center gap-4">
+                <span class="lang-pt">Projetos em Destaque</span><span class="lang-en">Featured Projects</span>
+                <div class="h-[1px] bg-slate-800 flex-grow"></div>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="https://github.com/roberleyantonio/GemiSnap" target="_blank" class="project-card glass p-8 rounded-2xl block">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-white">GemiSnap</h3>
+                        <span class="text-blue-400 text-xs font-mono">GitHub</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        <span class="lang-pt">Projeto inovador integrando capacidades de IA. Demonstração técnica de processamento de imagem e APIs modernas.</span>
+                        <span class="lang-en">Innovative project integrating AI capabilities. Technical demonstration of image processing and modern APIs.</span>
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">KMP</span>
+                        <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20">AI</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/roberleyantonio/global-wallet-explorer" target="_blank" class="project-card glass p-8 rounded-2xl block">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-white">Global Wallet Explorer</h3>
+                        <span class="text-blue-400 text-xs font-mono">GitHub</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        <span class="lang-pt">Explorador de carteiras globais focado em arquitetura limpa e alta performance de dados.</span>
+                        <span class="lang-en">Global wallet explorer focused on clean architecture and high data performance.</span>
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">MVVM</span>
+                        <span class="text-[10px] px-2 py-1 bg-green-500/10 text-green-400 rounded border border-green-500/20">COMPOSE</span>
+                    </div>
+                </a>
             </div>
         </div>
-    </main>
+    </section>
+
+    <footer class="py-10 text-center border-t border-slate-800/50">
+        <p class="text-slate-600 text-xs tracking-widest uppercase">© 2026 Roberley Antonio • Brasília, Brazil</p>
+    </footer>
 
     <script>
         let currentLang = 'pt';
@@ -50,8 +97,11 @@
             const ptElements = document.querySelectorAll('.lang-pt');
             const enElements = document.querySelectorAll('.lang-en');
             currentLang = currentLang === 'pt' ? 'en' : 'pt';
-            ptElements.forEach(el => el.style.display = currentLang === 'pt' ? 'inline' : 'none');
-            enElements.forEach(el => el.style.display = currentLang === 'en' ? 'inline' : 'none');
+            ptElements.forEach(el => el.style.display = currentLang === 'pt' ? 'block' : 'none');
+            enElements.forEach(el => el.style.display = currentLang === 'en' ? 'block' : 'none');
+            document.querySelectorAll('span.lang-pt, span.lang-en').forEach(el => {
+                if(el.style.display === 'block') el.style.display = 'inline';
+            });
         }
     </script>
 </body>
