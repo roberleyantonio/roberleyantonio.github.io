@@ -12,6 +12,8 @@
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .gradient-text { background: linear-gradient(90deg, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .project-card:hover { border-color: #3b82f6; transform: translateY(-4px); transition: all 0.3s ease; }
+        .skill-badge { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #93c5fd; padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 600; transition: all 0.2s; }
+        .skill-badge:hover { background: rgba(59, 130, 246, 0.2); border-color: #3b82f6; }
     </style>
 </head>
 <body class="bg-[#0f172a] text-slate-200 selection:bg-blue-500/30">
@@ -26,7 +28,7 @@
         </div>
     </nav>
 
-    <section class="pt-32 pb-16 px-6">
+    <section class="pt-32 pb-8 px-6">
         <div class="max-w-5xl mx-auto">
             <span class="text-blue-400 font-mono text-sm mb-4 block opacity-80 uppercase tracking-[0.2em]">Senior Software Engineer</span>
             <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
@@ -46,7 +48,30 @@
         </div>
     </section>
 
-    <section class="py-20 px-6">
+    <section class="py-8 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-sm font-mono text-slate-500 uppercase tracking-widest mb-6 flex items-center gap-4">
+                <span class="lang-pt">Habilidades</span><span class="lang-en">Core Skills</span>
+                <div class="h-[1px] bg-slate-800 flex-grow"></div>
+            </h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="skill-badge">KOTLIN</span>
+                <span class="skill-badge">JETPACK COMPOSE</span>
+                <span class="skill-badge">CLEAN ARCHITECTURE</span>
+                <span class="skill-badge">MVVM / MVP</span>
+                <span class="skill-badge">FLUTTER</span>
+                <span class="skill-badge">KMP (COMPOSE MULTIPLATFORM)</span>
+                <span class="skill-badge">REACTIVE PROGRAMMING (FLOW, COROUTINES, RXJAVA)</span>
+                <span class="skill-badge">GRAPHQL / REST APIs</span>
+                <span class="skill-badge">TDD / UI TEST</span>
+                <span class="skill-badge">CI/CD</span>
+                <span class="skill-badge">SOLID PRINCIPLES</span>
+                <span class="skill-badge">TECHNICAL LEADERSHIP</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-6">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-2xl font-bold mb-10 flex items-center gap-4">
                 <span class="lang-pt">Projetos em Destaque</span><span class="lang-en">Featured Projects</span>
@@ -63,12 +88,11 @@
                         <span class="lang-pt">Projeto inovador integrando capacidades de IA. Demonstração técnica de processamento de imagem e APIs modernas.</span>
                         <span class="lang-en">Innovative project integrating AI capabilities. Technical demonstration of image processing and modern APIs.</span>
                     </p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">MVVM</span>
-                        <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20">GEMINI AI</span>
-                        <span class="text-[10px] px-2 py-1 bg-green-500/10 text-green-400 rounded border border-green-500/20">COMPOSE</span>
-                        <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20">KOIN</span>
-                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-purple-400 rounded border border-blue-500/20">RETROFIT</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20 uppercase font-bold">MVVM</span>
+                        <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20 uppercase font-bold">GEMINI AI</span>
+                        <span class="text-[10px] px-2 py-1 bg-green-500/10 text-green-400 rounded border border-green-500/20 uppercase font-bold">COMPOSE</span>
+                        <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20 uppercase font-bold">KOIN</span>
                     </div>
                 </a>
 
@@ -81,13 +105,11 @@
                         <span class="lang-pt">Explorador de carteiras globais KMP, focado em arquitetura limpa e alta performance de dados com GraphQL.</span>
                         <span class="lang-en">Global Wallet KMP explorer focused on clean architecture and high data performance with GraphQL.</span>
                     </p>
-                    <div class="flex gap-2">
-                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20">KMP</span>
-                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-yellow-500/20">MVVM</span>
-                        <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-green-500/20">ANDROID/IOS</span>
-                        <span class="text-[10px] px-2 py-1 bg-green-500/10 text-green-400 rounded border border-blue-200/20">COMPOSE</span>
-                        <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20">KOIN</span>
-                        <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-red-500/20">GRAPHQL</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20 uppercase font-bold">KMP</span>
+                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded border border-blue-500/20 uppercase font-bold">GRAPHQL</span>
+                        <span class="text-[10px] px-2 py-1 bg-green-500/10 text-green-400 rounded border border-green-500/20 uppercase font-bold">COMPOSE</span>
+                        <span class="text-[10px] px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20 uppercase font-bold">KOIN</span>
                     </div>
                 </a>
             </div>
